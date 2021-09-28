@@ -99,6 +99,86 @@ body {
     justify-content: center;
 }
 
+/* Restaurant */
+.restaurants__flex__row__1, .restaurants__flex__row__2{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+.restaurants__flex__row__1{
+ align-items: baseline;
+}
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.restaurant__2, .restaurant__3{
+    height: 150px;
+    width: 100%;
+}
+
+.restaurant__1, .restaurant__4{
+    height: 250px;
+    width: 100%;
+}
+.restaurants__text{
+    color: #1d3557;
+}
+
+/* stay updated */
+.form__stay__updated{
+    margin-top: 15px;
+}
+.form__stay__updated div {
+    width: 100%;
+}
+
+.form__stay__updated div form{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form__stay__updated input{
+    padding: 5px;
+    border: 1px solid #ee89a0;;
+    border-radius: 4px;
+    background-color: #fcedf0;
+    color: #1d3557;
+}
+
+/* footer */
+
+.footer__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+.footer__section img{
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__section ul{
+    list-style: none;
+    font-size: 20px;
+}
+
 @media (min-width: 768px){
     .navbar {
         justify-content: space-between;
@@ -145,6 +225,34 @@ body {
         z-index: -1;
         transform: skewY(-5deg);
     }
+    .restaurants__container{
+        margin-top: 20px;
+        display: flex;  
+        align-items: center;
+    }
+    .restaurants__text{
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    .restaurants__flex{
+        width: 100%;
+    }
+
+    .form__heading{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .form__stay__updated div form{
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer__section {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
 }
 
 @media (min-width: 1020px){
@@ -153,6 +261,9 @@ body {
     }
     .hero__text {
         font-size: 45px;
+    }
+    .restaurants__container{
+        margin-top: 40px;
     }
 }
 
@@ -167,7 +278,6 @@ body {
     .explore__menu__text{
         font-size: 50px;
     }
-
 }
 
 @media (min-width: 1400px){
